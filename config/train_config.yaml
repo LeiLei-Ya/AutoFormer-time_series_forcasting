@@ -1,0 +1,20 @@
+BATCH_SIZE: 128
+
+EPOCH: 5
+
+LR: 0.0005
+WARMUP_STEPS: 0.01
+EPSILON: 0.00000001
+
+past_value: 'elec_load'
+furture_value: 'elec_load'
+static_fea: 'series_index'
+
+lags_sequence: [1, 2, 3, 4, 5, 6, 7]
+
+WINDOWS: 72
+MULTI_STEP: 24
+
+CUDA_VISIBLE_DEVICES: 0, 1
+
+MODEL_DIR: '/workspace/elec_station/checkpoint/model_autoformer'

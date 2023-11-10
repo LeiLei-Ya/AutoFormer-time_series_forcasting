@@ -1,0 +1,26 @@
+OUTPUT_DIR: 'predict_result'
+
+DATA_DIR: '/workspace/elec_station/data/autoformer_data.csv'
+
+os.environ["CUDA_LAUNCH_BLOCKING"]: '1'
+
+HAVE_STATION: True
+
+STATION_COLUMN: 'series_index'
+time_type: '%Y-%m-%d %H:%M'
+
+TIME_COLUMNS: 'date'
+
+furture_value: ['elec_load']
+past_value: ['elec_load']
+static_fea: ['series_index']
+
+CATEGORY_COLUMN: ['series_index']
+CONTINUOUS_COLUMN: ['elec_load']
+
+WINDOWS: 72
+MULTI_STEP: 24
+
+lags_sequence: [1, 2, 3, 4, 5, 6, 7]
+
+Freq: '1h'

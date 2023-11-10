@@ -1,0 +1,27 @@
+DATA_DIR: '/workspace/elec_station/data/autoformer_data.csv'
+MODEL_DIR: '/workspace/main_project/load_result/model_autoformer'
+OUTPUT_DIR: '/workspace/elec_station/result/one_day.csv'
+
+HAVE_STATION: True
+STATION_COLUMN: 'series_index'
+
+time_type: '%Y-%m-%d %H:%M'
+TIME_COLUMNS: 'date'
+
+Freq: 1h
+
+furture_value: ['elec_load']
+past_value:  ['elec_load']
+static_fea: ['series_index']
+
+longitude_lenth: 132
+latitude_lenth: 155
+
+CATEGORY_COLUMN: ['series_index']
+CONTINUOUS_COLUMN: ['elec_load']
+
+WINDOWS: 72
+MULTI_STEP: 24
+
+
+lags_sequence: [1, 2, 3, 4, 5, 6, 7]

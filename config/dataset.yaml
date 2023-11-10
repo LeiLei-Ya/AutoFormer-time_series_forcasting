@@ -1,0 +1,12 @@
+ori_file_path: '/workspace/elec_station/data/Trip2022Q1.csv'
+
+start_longitude: 113.702281
+start_latitude: 29.969076
+
+stop_longitude: 115.082572
+stop_latitude: 31.36126
+
+longitude_lenth: 132
+latitude_lenth: 155
+
+one_hour: 3600000
